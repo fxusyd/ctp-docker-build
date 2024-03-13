@@ -1,5 +1,4 @@
 FROM debian:stable-slim as build
-ARG DOCKER_IMAGE_TAG=2023.05.23
 
 RUN apt-get update && apt-get -y install \
  curl \
@@ -35,7 +34,7 @@ RUN ln -sfr /JavaPrograms/config/config.xml /JavaPrograms/CTP/config.xml \
 # java -XshowSettings:properties -version
 ENV CLASSPATH="/JavaPrograms/CTP/libraries:/JavaPrograms/ext" \
  LD_LIBRARY_PATH="/JavaPrograms/lib" \
- TZ="Australia/Sydney"
+ TZ="UTC"
 
 WORKDIR /JavaPrograms/CTP
 EXPOSE 8080/tcp
