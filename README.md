@@ -5,3 +5,5 @@ This is a repository of AIS CTP docker images which runs the Clinical Trial Proc
 The image includes the CTP installer at http://mirc.rsna.org/download/CTP-installer.jar 
 
 The latest version of CTP can be found on http://mirc.rsna.org/query
+
+Current version: 2023.11.04
